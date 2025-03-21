@@ -1,1 +1,6 @@
 /* STILMALL */
+#containers {
+display: grid;
+height: auto;
+width: auto;
+}
