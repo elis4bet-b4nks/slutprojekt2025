@@ -1,6 +1,12 @@
 /* STILMALL */
-#containers {
+.containers {
 display: grid;
 height: auto;
 width: auto;
 }
+
+.headers {
+   display: flex;
+   flex-direction: row;
+}
+
