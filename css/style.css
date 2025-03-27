@@ -1,12 +1,46 @@
 /* STILMALL */
-.containers {
-display: grid;
-height: auto;
-width: auto;
+
+@media (max-width: 768px) {
+   .containers {
+      display: block;
+      width: 100%;
+      height: 100%;
+      #portrait {
+         width: 100%;
+      }
+      grid-template-areas: 
+      'hdn' 'hdl'
+      'idt' 'idt'
+      'prt' 'prt';
+   }
 }
 
-.headers {
-   display: flex;
-   flex-direction: row;
+@media (min-width: 1024px) {
+   .containers {
+      display: block;
+      width: 100%;
+      height: 100%;
+      #portrait {
+         width: 30%;
+      }
+      grid-template-areas: 
+      'hdn' 'hdl'
+      'idt' 'prt';
+   }
 }
 
+.hdname {
+   grid-area: hdn;
+}
+
+.hdlinks {
+   grid-area: hdl;
+}
+
+#indextext {
+   grid-area: idt;
+}
+
+#portrait {
+   font-variant: prt;
+}
