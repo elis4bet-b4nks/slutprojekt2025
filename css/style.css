@@ -26,6 +26,13 @@
       max-width: 180%;
       margin: 1rem;
    }
+   .headers {
+      grid-area: hds;
+      background-color: rgb(93, 67, 224);
+   }
+   .headers h1 {
+      text-align: center;
+   }
 }
 
 @media (min-width: 1024px) {
@@ -53,12 +60,22 @@
       max-width: 70%;
       margin: 2rem;
    }
+   .headers {
+      grid-area: hds;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(93, 67, 224);
+   }
+   #indextext {
+      display: flex;
+      
+      align-items: center;
+      height: 40vh;
+      text-align: start;
+   }
 }
 
-.headers {
-   grid-area: hds;
-   background-color: rgb(93, 67, 224);
-}
 
 .hdname {
    grid-area: hdn;
@@ -73,6 +90,8 @@
 
 #indextext {
    grid-area: idt;
+   display: flex;
+   flex-direction: column;
 }
 
 #portrait {
@@ -106,8 +125,13 @@ section img {
 p {
    color: aliceblue;
 }
-h1, h2 {
+
+h2 {
    color: aliceblue;
+}
+
+h1 {
+   color: rgb(71, 230, 233);
 }
 
 @media screen and (max-width:600px){
@@ -116,6 +140,10 @@ h1, h2 {
    }
 }
 
-h1, p {
+h1, h2, p {
    padding: 1rem;
+}
+
+nav ul li:hover {
+   background-color: rgb(133, 99, 242);
 }
