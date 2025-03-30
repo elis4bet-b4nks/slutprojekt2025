@@ -69,13 +69,23 @@
    }
    #indextext {
       display: flex;
-      
-      align-items: center;
-      height: 40vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 70vh;
       text-align: start;
    }
 }
 
+#indextext h2 {
+   margin-bottom: 0;
+   font-size: 50px;
+}
+
+#indextext p {
+   margin-top: 0;
+   font-size: 25px;
+}
 
 .hdname {
    grid-area: hdn;
