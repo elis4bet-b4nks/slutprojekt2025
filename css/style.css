@@ -15,16 +15,36 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto auto auto;
 
+   }
+   #indexcont {
       grid-template-areas: 
       'hds hds'
       'idt idt'
       'prt prt';
    }
+   #workscont {
+      grid-template-areas: 
+      'hds hds'
+      'wrsc wrsc'
+      'wrsc wrsc';
+   }
+   #aboutcont {
+      grid-template-areas: 
+      'hds hds'
+      'absc absc'
+      'absc absc';
+   }
+   #contactcont {
+      grid-template-areas: 
+      'hds hds'
+      'ctsc ctsc'
+      'ctsc ctsc';
+   }
    #portrait {
       width: 200%;
    }
    #swishcard, #henkesuper, #fisherman, #pattern {
-      max-width: 180%;
+      max-width: 90%;
       margin: 1.2rem;
    }
    .headers {
@@ -33,6 +53,27 @@
    }
    .headers h1 {
       text-align: center;
+   }
+   #worksh2, #abouth2, #contacth2 {
+      font-size: 25px;
+   }
+   #aboutmep {
+      max-width: 100%;
+      width: 330px;
+   }
+   #aboutmep {
+      font-size: 20px;
+   }
+   #contactdiv p {
+      font-size: 20px;
+   }
+   #indextext h2 {
+      margin-bottom: 0;
+      font-size: 35px;
+   }
+   #indextext p {
+      margin-top: 0;
+      font-size: 20px;
    }
 }
 
@@ -55,11 +96,32 @@
       'hds hds'
       'idt prt';
    }
+   #indexcont {
+      grid-template-areas: 
+      'hds hds'
+      'idt prt';
+   }
+   #workscont {
+      grid-template-areas: 
+      'hds hds'
+      'wrsc wrsc';
+   }
+   #aboutcont {
+      grid-template-areas: 
+      'hds hds'
+      'absc absc';
+   }
+   #contactcont {
+      grid-template-areas: 
+      'hds hds'
+      'ctsc ctsc';
+   }
    #portrait {
       width: 80%;
+      margin-left: 7rem;
    }
    #swishcard, #henkesuper, #fisherman, #pattern {
-      max-width: 70%;
+      max-width: 40%;
       margin: 2rem;
       margin-left: 25rem;
    }
@@ -78,20 +140,39 @@
       height: 70vh;
       text-align: start;
    }
+   #worksh2, #abouth2, #contacth2 {
+      font-size: 35px;
+   }
+   #aboutmep {
+      font-size: 25px;
+   }
+   #contactdiv p {
+      font-size: 25px;
+   }
+   #indextext h2 {
+      margin-bottom: 0;
+      font-size: 50px;
+   }
+   #indextext p {
+      margin-top: 0;
+      font-size: 25px;
+   }
+}
+
+#workssec {
+   grid-area: wrsc;
+}
+
+#aboutsec {
+   grid-area: absc;
+}
+
+#contactsec {
+   grid-area: ctsc;
 }
 
 #aboutdiv, #contactdiv {
-   height: 80vh;
-}
-
-#indextext h2 {
-   margin-bottom: 0;
-   font-size: 50px;
-}
-
-#indextext p {
-   margin-top: 0;
-   font-size: 25px;
+   height: 75vh;
 }
 
 .hdname {
@@ -149,6 +230,7 @@ h2 {
 
 h1 {
    color: rgb(71, 230, 233);
+   font-size: 45px;
 }
 
 @media screen and (max-width:600px){
@@ -162,5 +244,5 @@ h1, h2, p {
 }
 
 nav ul li:hover {
-   background-color: rgb(133, 99, 242);
+   background-color: rgb(122, 74, 244);
 }
